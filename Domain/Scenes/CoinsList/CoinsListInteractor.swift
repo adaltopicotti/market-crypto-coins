@@ -48,7 +48,7 @@ class CoinsListInteractor: CoinsListBusinessLogic, CoinsListDataStore {
     }
     
     func doFetchListCoins(request: CoinsList.FetchListCoins.Request) {
-        let baseCoin = "dio"//request.baseCoin.rawValue
+        let baseCoin = request.baseCoin.rawValue
         let orderBy = request.orderBy.rawValue
         let top = request.top.rawValue
         let percentagePrice = request.pricePercentage.rawValue

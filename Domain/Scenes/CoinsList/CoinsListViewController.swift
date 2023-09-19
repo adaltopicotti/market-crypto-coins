@@ -152,6 +152,7 @@ class CoinsListViewController: UIViewController {
             top: filtersUtils.getSelectedTopFilter(),
             pricePercentage: filtersUtils.getSelectedPriceChangePercentageFilter()
         )
+        
         interactor?.doFetchListCoins(request: request)
     }
   
@@ -201,7 +202,8 @@ extension CoinsListViewController: UICollectionViewDataSource {
         if collectionView == globalCollectionView {
             return globalViewModel?.globalValues.count ?? 0
         }
-        return filtersUtils.count
+//        return filtersUtils.count
+        return 4
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -274,7 +276,7 @@ extension CoinsListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: CoinViewCell.identifier, for: indexPath) as? CoinViewCell {
             guard let viewModel = coinsViewModel else { return UITableViewCell() }
-            
+            print(viewModel.coins)
             let coin = viewModel.coins[indexPath.row]
             cell.rankLabel.text = coin.rank
             cell.iconImageView.loadImage(from: coin.iconUrl)

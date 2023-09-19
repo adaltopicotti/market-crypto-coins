@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C89276E02AB93E7100E815DC /* CoinHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C89276DF2AB93E7100E815DC /* CoinHeaderView.xib */; };
 		C8D0B9232AB8D0CA00B64239 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D0B9222AB8D0CA00B64239 /* AppDelegate.swift */; };
 		C8D0B9252AB8D0CA00B64239 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D0B9242AB8D0CA00B64239 /* SceneDelegate.swift */; };
 		C8D0B9272AB8D0CA00B64239 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D0B9262AB8D0CA00B64239 /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C89276DF2AB93E7100E815DC /* CoinHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinHeaderView.xib; sourceTree = "<group>"; };
 		C8D0B91F2AB8D0CA00B64239 /* MarketCryptoCoins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketCryptoCoins.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8D0B9222AB8D0CA00B64239 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8D0B9242AB8D0CA00B64239 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				C8D0B94D2AB8D28700B64239 /* FiltersUtils.swift */,
 				C8D0B94F2AB8D2AA00B64239 /* CryptoCurrenciesError.swift */,
 				C8D0B9512AB8D2EC00B64239 /* Extensions.swift */,
+				C89276DF2AB93E7100E815DC /* CoinHeaderView.xib */,
 			);
 			path = MarketCryptoCoins;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C89276E02AB93E7100E815DC /* CoinHeaderView.xib in Resources */,
 				C8D0B92F2AB8D0CE00B64239 /* LaunchScreen.storyboard in Resources */,
 				C8D0B92C2AB8D0CE00B64239 /* Assets.xcassets in Resources */,
 				C8D0B92A2AB8D0CA00B64239 /* Main.storyboard in Resources */,
